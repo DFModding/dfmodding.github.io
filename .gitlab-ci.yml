@@ -3,7 +3,7 @@ pages:
   script:
   - mkdir build
   - cp -vr images build/images
-  - cp -v *.html build/
+  - cp -v *.css *.html build/
   - mv build public
   artifacts:
     paths:
