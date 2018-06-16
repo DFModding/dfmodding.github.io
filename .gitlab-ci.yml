@@ -1,0 +1,12 @@
+pages:
+  stage: deploy
+  script:
+  - mkdir build
+  - cp -vr images build/images
+  - cp -v *.html build/
+  - mv build public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
