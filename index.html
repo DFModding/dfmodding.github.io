@@ -28,15 +28,11 @@
         <div class="body">
           <p>
             This page provides a collection of tools for Dreamfall.
-            Since I haven't kept track of these things for many years
-            the given downloads might be outdated and incomplete. So
-            if you know tools not listed here or know newer version
-            let <a href="mailto:grumbel@gmail.com">me</a> know.
-          </p>
-          <p>
-            This page is not the authoritative page for these tools,
-            but instead meant as a backup in case the original
-            download links disappear.
+            DFToolBox and DFModTool are developed here, the other
+            downloads are a backup in case the original download links
+            disappear and might be outdated. If you know tools not
+            listed here or know a newer version let
+            <a href="mailto:grumbel@gmail.com">me</a> know.
           </p>
         </div>
       </div>
@@ -44,34 +40,55 @@
       <div class="boxed">
         <h2 id="dftoolbox">DFToolBox</h2>
         <div class="body">
-          <a href="images/dftoolbox1.png"><img class="screenshot" src="images/dftoolbox1_thumb.jpg" alt="Dftoolbox Screenshot 1" /></a>
-          <a href="images/dftoolbox2.png"><img class="screenshot" src="images/dftoolbox2_thumb.jpg" alt="Dftoolbox Screenshot 2" /></a>
+          <a href="images/dftoolbox-3d-alley.png"><img class="screenshot" src="images/dftoolbox-3d-alley_thumb.jpg" alt="3D preview of the alley location" /></a>
+          <a href="images/dftoolbox-3d-crossroads.png"><img class="screenshot" src="images/dftoolbox-3d-crossroads_thumb.jpg" alt="3D preview of the crossroads location" /></a>
+          <a href="images/dftoolbox-types.png"><img class="screenshot" src="images/dftoolbox-types_thumb.jpg" alt="Files sorted by type" /></a>
           <p>
             DFToolBox is a viewer and extractor for the .pak files that
-            contain Dreamfalls data (textures, dialog, scripts, etc.).
+            contain Dreamfall's data, with command line tools to convert
+            and replace them.
           </p>
 
           <p>
             Features:
           </p>
           <ul>
-            <li>export files from .pak</li>
-            <li>view textures</li>
-            <li>listen to music</li>
-            <li>listen to dialog</li>
-            <li>look into script files</li>
+            <li>browse the files by pak or sorted by type</li>
+            <li>3D preview of locations, characters and objects, with animations</li>
+            <li>export files as they are, or convert them: textures and normal maps to PNG, scripts and shaders to text</li>
+            <li>view textures, look into scripts and shaders</li>
+            <li>listen to music, sound effects and dialog, with the text of the voice lines</li>
+            <li>convert localization.dat to .po files and back, for translations</li>
+            <li>compile and decompile Shark3D files</li>
+            <li>replace files inside the .paks</li>
           </ul>
 
           <p>
-            Available for Windows and Linux.
+            Available for 64-bit Windows and Linux. What changed is in
+            the <a href="https://github.com/DFModding/dftoolbox/blob/master/NEWS">NEWS</a>,
+            how much of the game's data is understood in the
+            <a href="https://github.com/DFModding/dftoolbox/blob/master/README.md#status">README</a>.
           </p>
 
           <h3>Download</h3>
           <ul>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dftoolbox-2006-10-30-1.zip">dftoolbox-2006-10-30-1.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dftoolbox-2006-05-31.zip">dftoolbox-2006-05-31.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dftoolbox-2006-05-30.zip">dftoolbox-2006-05-30.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dftoolbox-2006-05-27.zip">dftoolbox-2006-05-27.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dftoolbox-0.2.0-win64.zip">dftoolbox-0.2.0-win64.zip</a> (Windows, 64-bit)</li>
+            <li><a href="https://github.com/DFModding/dftoolbox">Source code</a></li>
+          </ul>
+          <p>
+            On Linux it can be run with <a href="https://nixos.org/">Nix</a> or built with CMake and Qt 6:
+          </p>
+          <pre>nix run github:DFModding/dftoolbox</pre>
+
+          <h3>Old versions</h3>
+          <p>
+            From 2006, using the old FOX interface:
+          </p>
+          <ul>
+            <li><a href="https://dfmodding.github.io/downloads/dftoolbox-2006-10-30-1.zip">dftoolbox-2006-10-30-1.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dftoolbox-2006-05-31.zip">dftoolbox-2006-05-31.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dftoolbox-2006-05-30.zip">dftoolbox-2006-05-30.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dftoolbox-2006-05-27.zip">dftoolbox-2006-05-27.zip</a></li>
           </ul>
 
           <br clear="all" />
@@ -86,7 +103,7 @@
             <a href="images/dfmodtool2.png"><img class="screenshot" src="images/dfmodtool2_thumb.jpg" alt="DFModTool Screenshot 2" /></a>
 
             DFModTool allows you to manage modification for Dreamfall,
-            more precisly it allows you to replace files inside the
+            more precisely it allows you to replace files inside the
             .pak archives of Dreamfall.
           </p>
           <p>Features:</p>
@@ -123,13 +140,12 @@
             <li>export 3D models to DirectX, Milkshape or HalfLife2</li>
             <li>import 3D models into the game</li>
           </ul>
-https://gitlab.com/DFModding/downloads/raw/master/
           <h3>Download</h3>
           <ul>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dreamview-2007-05-31.zip">dreamview-2007-05-31.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dreamview_src-2007-05-31.zip">dreamview_src-2007-05-31.zip</li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dreamview-2007-05-02.zip">dreamview-2007-05-02.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/dreamview_src-2007-05-02.zip">dreamview_src-2007-05-02.zip</li>
+            <li><a href="https://dfmodding.github.io/downloads/dreamview-2007-05-31.zip">dreamview-2007-05-31.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dreamview_src-2007-05-31.zip">dreamview_src-2007-05-31.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dreamview-2007-05-02.zip">dreamview-2007-05-02.zip</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/dreamview_src-2007-05-02.zip">dreamview_src-2007-05-02.zip</a></li>
           </ul>
 
           <a href="http://forums.longestjourney.com/showthread.php?t=3430">DreamView discussion in the LongestJourney forums</a>
@@ -143,10 +159,10 @@ https://gitlab.com/DFModding/downloads/raw/master/
           <a href="images/dreamfall_trainer.jpg"><img class="screenshot" src="images/dreamfall_trainer_thumb.jpg" alt="Dreamfall Trainer Screenshot" /></a>
 
           <ul>
-            <li><a href="http://sunbeam.bubble.ro/2008/01/29/dreamfall-global-trainer/">Dreamfall Trainer Homepage</a>
+            <li><a href="http://sunbeam.bubble.ro/2008/01/29/dreamfall-global-trainer/">Dreamfall Trainer Homepage</a></li>
             <li><a href="http://forums.longestjourney.com/showthread.php?t=5401">Dreamfall Trainer Discussion</a></li>
             <li><a href="http://sunbeam.bubble.ro/wp-content/uploads/2008/01/ext-tlj2.zip">ext-tlj2.zip</a></li>
-            <li><a href="https://gitlab.com/DFModding/downloads/raw/master/ext-tlj2.zip">ext-tlj2.zip (mirror)</a></li>
+            <li><a href="https://dfmodding.github.io/downloads/ext-tlj2.zip">ext-tlj2.zip (mirror)</a></li>
           </ul>
 
           <br clear="all" />
@@ -157,6 +173,8 @@ https://gitlab.com/DFModding/downloads/raw/master/
         <h2 id="links">Links</h2>
         <div class="body">
           <ul>
+            <li><a href="https://github.com/illusionyy/DreamView">DreamView source code</a> - current version of the viewer and exporter for Dreamfall models</li>
+            <li><a href="https://github.com/uchr/DreamfallTLJViewer">DreamfallTLJViewer</a> - exports meshes and textures to FBX</li>
             <li><a href="http://TLJwiki.com">TLJWiki - The Longest Journey and Dreamfall Wiki</a></li>
             <li><a href="http://www.geocities.com/rescosoftware/">TLJ Viewer - resource viewer for The Longest Journey</a></li>
             <li><a href="http://forums.longestjourney.com">The Longest Journey Forums</a></li>
